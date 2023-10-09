@@ -11,8 +11,12 @@
             background-color: #F0F8FF;
             color: #000000;
             font-family: 'Poppins', sans-serif;
-            padding-bottom: 50px;
-        }
+            padding-bottom: 50px; 
+        line-height: 1.5; 
+        margin: 0;/* Set a consistent line height for the entire document */
+
+    }
+ 
 
         .resume-container {
             max-width: 800px;
@@ -63,7 +67,8 @@
 
         .content-section {
             margin-top: 20px;
-            margin-bottom: 30px;
+            
+            
         }
 
         .columns {
@@ -100,7 +105,8 @@
             color:#59aecf;
             
         }
-        .section{
+        .section
+        {
             width:400px;
            
             border: none;
@@ -120,17 +126,150 @@
   color: black;  /* old IE */
   background-color: black; 
   margin-top: 0;
+  margin-bottom: 15px;}
+  .section-c{
+            width:100%;
+           
+            border: none;
+  height: 4px;
+  /* Set the hr color */
+  color: black;  /* old IE */
+  background-color: black; 
+  margin-top: 0;
   margin-bottom: 15px;
         }
         .color-set{
             color:#59aecf;
-            display:contents;
+            display:inline;
         }
-       
+        .inlines-setting{
+            display:inline;
+        }
+    
+
+         /* Media Queries for Responsive Design */
+         @media only screen and (max-width: 768px) {
+            body{
+                margin:0;
+                padding:0;
+                height: 100vh;
+
+            }
+            .resume-container {
+                max-width: 100vh;
+                padding: 50px 18px;
+                margin:0;
+                
+            }
+            
+
+        .column:last-child {
+            width: 40vh; 
+            margin-left: 20px;
+        }
+
+
+            .name {
+                font-size: 18px;
+            }
+
+            .description {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .section-title {
+                font-size: 12px;
+            }
+
+            .contact-info h3 {
+                font-size: 10px;
+            }
+
+            .contact-info p,
+            .link,
+            ul li {
+                font-size: 10px;
+            }
+
+            .section,
+            .section-b {
+                width: 80%;
+                margin-bottom: 4px;
+            }
+            .section-c{
+                width:97%;
+                margin-bottom: 4px;
+            }
+
+            .column {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            body{
+                margin:0;
+                padding:0;
+                height: 100vh;
+                
+
+            }
+            .resume-container {
+                max-width: 100vh;
+                padding: 50px 18px;
+                margin:0;
+                
+            }
+            .name {
+                font-size: 22px;
+            }
+            .column:last-child {
+            width: 40vh; 
+            margin-left: 20px;
+        }
+
+            .size,
+            .inlines-setting{
+                font-size: 11px;
+            }
+
+            .description {
+                font-size: 17px;
+                margin-bottom: 8px;
+            }
+
+            .section-title {
+                font-size: 14px;
+            }
+
+            .contact-info h3 {
+                font-size: 12px;
+            }
+
+            .contact-info p,
+            .link,
+            .color-set,
+            .color-sky,
+            ul li {
+                font-size: 11px;
+            }
+
+            .section,
+            .section-b {
+                width: 90%;
+                margin-bottom: 12px;
+            }
+            .section-c{
+                width:97%;
+                margin-bottom: 4px;
+            }
+        }
     </style>
 </head>
 
 <body>
+   
     <div class="resume-container">
         <div class="name">AYUSHI NARANG</div>
         <div class="description">Full Stack Developer</div>
@@ -142,8 +281,8 @@
             
             </div>
             <div class="contact-email">
-                <a href="https://github.com/ayunarang" target="_blank" class="link">GitHub</a>
-                <a href="https://www.linkedin.com/in/ayushinarang21/" target="_blank" class="link">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank" class="link">GitHub</a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="link">LinkedIn</a>
             </div>
         </div>
 
@@ -152,7 +291,7 @@
                 <div class="content-section">
                     <div class="section-title">CAREER OBJECTIVE</div>
                     <hr class="section">
-                    <p>Aspiring full stack developer dedicated to creating seamless, user-centric web applications for enhanced user experiences.</p>
+                    <p class="size">Aspiring full stack developer dedicated to creating seamless, user-centric web applications for enhanced user experiences.</p>
                 </div>
 
                 <div class="content-section">
@@ -160,22 +299,13 @@
                     <hr class="section">
                     
                         <div class="link"><b>Real time Weather Application:</b></div>
-                        Developed a dynamic live weather app using APIs for real-time weather data. Implemented responsive design, delivering accurate forecasts with additional details such as wind flow, sunrise, sunset, humidity, and pressure.<br><br>
-                        <div class="link"><b>Amazon Price Tracker:</b></div>
-                        Created a personalized Amazon price tracker that allows users to set affordability thresholds for desired items. Engineered email notification system to alert users when products reach their specified price range.
+                        <div class="size">Developed a dynamic live weather app using APIs, Implemented responsive design.<br><br></div>
+                        <div class="link" ><b>Amazon Price Tracker:</b></div>
+                        <div class="size">Created a personalized Amazon price tracker that allows users to set affordability thresholds for desired items. Engineered email notification system to alert for specified price range drop.</div>
                     
                 </div>
 
-                <div class="content-section">
-                    <div class="section-title">SKILLS</div>
-                    <hr class="section">
-                    
-                        <div class="color-set"><b>Programming Languages:</b></div> Java, JavaScript, Python<br>
-                            <div class="color-set"><b>Frameworks:</b></div> Django<br>
-                                <div class="color-set"><b>Database:</b></div> MongoDB<br>
-                                    <div class="color-set"><b>General:</b></div> Data Structures and Algorithm, OOPs with C++
-                    
-                </div>
+                
             </div>
 
             <div class="column">
@@ -183,15 +313,27 @@
                     <div class="section-title">EDUCATION</div>
                     <hr class="section-b">
                     
-                        <p class="color-sky"><b>Degree: </b></p>Bachelor of Technology in Computer Science (BTech)
-                        <p class="color-sky"><b>College:</b></p>Seth Jai Parkash Mukand Lal
-                        Institute of Engineering and Technology (JMIT) | Radaur
-                        <p class="color-sky"><b>School: </b></p>Sacred Heart Convent Sr. Sec. School | Jagadhri
+                        <p class="color-sky"><b>Degree: </b></p><div class="size">Bachelor of Technology in Computer Science (BTech)</div>
+                        <p class="color-sky"><b>College:</b></p><div class="size">Seth Jai Parkash Mukand Lal
+                        Institute of Engineering and Technology (JMIT) | Radaur</div>
+                        <p class="color-sky"><b>School: </b></p><div class="size">Sacred Heart Convent Sr. Sec. School | Jagadhri</div>
                     
                 </div>
             </div>
+
+        </div>
+        <div class="content-section">
+            <div class="section-title">SKILLS</div>
+            <hr class="section-c">
+            
+                <div class="color-set"><b>Programming Languages:</b></div> <div class="inlines-setting">Java, JavaScript, Python<br></div>
+                    <div class="color-set"><b>Frameworks:</b></div> <div class="inlines-setting">Django<br></div>
+                        <div class="color-set"><b>Database:</b></div> <div class="inlines-setting">MongoDB<br></div>
+                            <div class="color-set"><b>General:</b></div> <div class="inlines-setting">Data Structures and Algorithm, OOPs with C++</div>
+            
         </div>
     </div>
+    
 </body>
 
 </html>
