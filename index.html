@@ -21,7 +21,7 @@
         .resume-container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px;
+            padding: 40px 40px 25px 40px;
             background-color: #ffffff;
             border-radius: 10px;
             margin-top: 50px;
@@ -62,7 +62,7 @@
         .contact-info a {
             color: #87CEEB;
             text-decoration: none;
-            margin-right: 20px; /* Added space between GitHub and LinkedIn */
+            margin-left:27px; /* Added space between GitHub and LinkedIn */
         }
 
         .content-section {
@@ -145,7 +145,24 @@
         .inlines-setting{
             display:inline;
         }
+        .contact-email img {
+    width: 21px;
+    height: 21px;
+    margin-left: 3px;
     
+    vertical-align:bottom;
+    
+}
+.contact-info-b{
+    display:inline-flex;
+}
+
+.footer{
+    font-size:10px;
+    padding: 110px 50px 0px 50px;
+    text-align: center;
+}
+
 
          /* Media Queries for Responsive Design */
          @media only screen and (max-width: 768px) {
@@ -217,7 +234,7 @@
             }
             .resume-container {
                 max-width: 100vh;
-                padding: 50px 18px;
+                padding: 50px 18px 20px 18px;
                 margin:0;
                 
             }
@@ -264,7 +281,24 @@
                 width:97%;
                 margin-bottom: 4px;
             }
-        }
+            .contact-email img {
+    width: 14px;
+    height: 14px;
+    margin-left:2px;
+    
+}
+.contact-email a{
+    margin-left:10px;
+    font-size: 10px;
+}
+.footer{
+    padding-top: 60px;
+    font-size: 8px;
+}
+}
+
+
+        
     </style>
 </head>
 
@@ -281,8 +315,8 @@
             
             </div>
             <div class="contact-email">
-                <a href="https://github.com/ayunarang" target="_blank" class="link">GitHub</a>
-                <a href="https://www.linkedin.com/in/ayushinarang21" target="_blank" class="link">LinkedIn</a>
+                <div class="contact-info-b"><a href="https://github.com/ayunarang" target="_blank" class="link">GitHub</a><img src="icons8-github-30.png"></div>
+                    <div class="contact-info-b"><a href="https://www.linkedin.com/in/ayushinarang21" target="_blank" class="link">LinkedIn</a><img src="icons8-linkedin-30.png"></div>
             </div>
         </div>
 
@@ -313,10 +347,10 @@
                     <div class="section-title">EDUCATION</div>
                     <hr class="section-b">
                     
-                        <p class="color-sky"><b>Degree: </b></p><div class="size">Bachelor of Technology in Computer Science (BTech)</div>
-                        <p class="color-sky"><b>College:</b></p><div class="size">Seth Jai Parkash Mukand Lal
-                        Institute of Engineering and Technology (JMIT) | Radaur</div>
-                        <p class="color-sky"><b>School: </b></p><div class="size">Sacred Heart Convent Sr. Sec. School | Jagadhri</div>
+                        <p class="color-sky"><b>Degree: </b></p><div class="size">Bachelor of Technology in Computer Science (BTech)
+                         JMIT | Radaur<br>
+                        [2021-2025]</div>
+                        <p class="color-sky"><b>School: </b></p><div class="size">Sacred Heart Convent Sr. Sec. School (SHCS) | Jagadhri<br>[2018-2020]</div>
                     
                 </div>
             </div>
@@ -326,12 +360,13 @@
             <div class="section-title">SKILLS</div>
             <hr class="section-c">
             
-                <div class="color-set"><b>Programming Languages:</b></div> <div class="inlines-setting">Java, JavaScript, Python<br></div>
-                    <div class="color-set"><b>Frameworks:</b></div> <div class="inlines-setting">Django<br></div>
+                <div class="color-set"><b>Programming Languages:</b></div> <div class="inlines-setting">Java, JavaScript, HTML, CSS, Python<br></div>
+                    <div class="color-set"><b>Frameworks:</b></div> <div class="inlines-setting">Django, BootStrap<br></div>
                         <div class="color-set"><b>Database:</b></div> <div class="inlines-setting">MongoDB<br></div>
                             <div class="color-set"><b>General:</b></div> <div class="inlines-setting">Data Structures and Algorithm, OOPs with C++</div>
             
         </div>
+        <div class="footer">&copy 2023 Ayushi Narang</div>
     </div>
     
 </body>
