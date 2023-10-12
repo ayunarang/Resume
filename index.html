@@ -5,307 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Resume</title>
-    <style>
-        body {
-            background-color: #F0F8FF;
-            color: #000000;
-            font-family: 'Poppins', sans-serif;
-            padding-bottom: 50px; 
-        line-height: 1.5; 
-        margin: 0;/* Set a consistent line height for the entire document */
-
-    }
- 
-
-        .resume-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 40px 25px 40px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            margin-top: 50px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .name {
-            font-size: 32px;
-            color: #000000;
-            font-weight: bold;
-            
-            margin-bottom: 6px;
-
-            
-        }
-
-        .section-title {
-            font-size: 20px;
-            color: #000000;
-            font-weight: bold;
-            
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-    
-
-        .contact-info h3 {
-            color:#59aecf;
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-
-        .contact-info a {
-            color: #87CEEB;
-            text-decoration: none;
-            margin-left:27px; /* Added space between GitHub and LinkedIn */
-        }
-
-        .content-section {
-            margin-top: 20px;
-            
-            
-        }
-
-        .columns {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .column {
-            width: 57%;
-        }
-
-        .column:last-child {
-            width: 38%; 
-        }
-
-        ul {
-            margin-top: 0;
-        }
-
-        ul li {
-            list-style: disc;
-            margin-left: 20px;
-        }
-        .color-sky{
-            color:#59aecf;
-        }
-        .description{
-            color:#59aecf;
-            font-size: 21px;
-            margin-bottom: 25px;
-            
-        }
-        .link{
-            color:#59aecf;
-            
-        }
-        .section
-        {
-            width:400px;
-           
-            border: none;
-  height: 4px;
-  /* Set the hr color */
-  color: black;  /* old IE */
-  background-color: black; 
-  margin-top: 0;
-  margin-bottom: 17px;
-        }
-        .section-b{
-            width:270px;
-           
-            border: none;
-  height: 4px;
-  /* Set the hr color */
-  color: black;  /* old IE */
-  background-color: black; 
-  margin-top: 0;
-  margin-bottom: 15px;}
-  .section-c{
-            width:100%;
-           
-            border: none;
-  height: 4px;
-  /* Set the hr color */
-  color: black;  /* old IE */
-  background-color: black; 
-  margin-top: 0;
-  margin-bottom: 15px;
-        }
-        .color-set{
-            color:#59aecf;
-            display:inline;
-        }
-        .inlines-setting{
-            display:inline;
-        }
-        .contact-email img {
-    width: 21px;
-    height: 21px;
-    margin-left: 3px;
-    
-    vertical-align:bottom;
-    
-}
-.contact-info-b{
-    display:inline-flex;
-}
-
-.footer{
-    font-size:10px;
-    padding: 110px 50px 0px 50px;
-    text-align: center;
-}
-
-
-         /* Media Queries for Responsive Design */
-         @media only screen and (max-width: 768px) {
-            body{
-                margin:0;
-                padding:0;
-                height: 100vh;
-
-            }
-            .resume-container {
-                max-width: 100vh;
-                padding: 50px 18px;
-                margin:0;
-                
-            }
-            
-
-        .column:last-child {
-            width: 40vh; 
-            margin-left: 20px;
-        }
-
-
-            .name {
-                font-size: 18px;
-            }
-
-            .description {
-                font-size: 14px;
-                margin-bottom: 10px;
-            }
-
-            .section-title {
-                font-size: 12px;
-            }
-
-            .contact-info h3 {
-                font-size: 10px;
-            }
-
-            .contact-info p,
-            .link,
-            ul li {
-                font-size: 10px;
-            }
-
-            .section,
-            .section-b {
-                width: 80%;
-                margin-bottom: 4px;
-            }
-            .section-c{
-                width:97%;
-                margin-bottom: 4px;
-            }
-
-            .column {
-                width: 100%;
-            }
-        }
-
-        @media only screen and (max-width: 480px) {
-            body{
-                margin:0;
-                padding:0;
-                height: 100vh;
-                
-
-            }
-            .resume-container {
-                max-width: 100vh;
-                padding: 50px 18px 20px 18px;
-                margin:0;
-                
-            }
-            .name {
-                font-size: 22px;
-            }
-            .column:last-child {
-            width: 40vh; 
-            margin-left: 20px;
-        }
-
-            .size,
-            .inlines-setting{
-                font-size: 11px;
-            }
-
-            .description {
-                font-size: 16px;
-                margin-bottom: 8px;
-            }
-
-            .section-title {
-                font-size: 14px;
-            }
-
-            .contact-info h3 {
-                font-size: 12px;
-            }
-
-            .contact-info p,
-            .link,
-            .color-set,
-            .color-sky,
-            ul li {
-                font-size: 11px;
-            }
-
-            .section,
-            .section-b {
-                width: 90%;
-                margin-bottom: 12px;
-            }
-            .section-c{
-                width:97%;
-                margin-bottom: 4px;
-            }
-            .contact-email img {
-    width: 14px;
-    height: 14px;
-    margin-left:2px;
-    
-}
-.contact-email a{
-    margin-left:10px;
-    font-size: 10px;
-}
-.footer{
-    padding-top: 60px;
-    font-size: 8px;
-}
-}
-
-
-        
-    </style>
 </head>
 
 <body>
-   
+
     <div class="resume-container">
-        <br>
+
         <div class="name">AYUSHI NARANG</div>
         <div class="description">Full Stack Developer</div>
         <div class="contact-info">
@@ -313,11 +20,15 @@
                 <h3>Contact</h3>
                 <p>Email: ayushinarang21@gmail.com</p>
                 <p>Phone: +91-8053225445</p>
-            
+
             </div>
             <div class="contact-email">
-                <div class="contact-info-b"><a href="https://github.com/ayunarang" target="_blank" class="link">GitHub</a><img src="icons8-github-30.png"></div>
-                    <div class="contact-info-b"><a href="https://www.linkedin.com/in/ayushinarang21" target="_blank" class="link">LinkedIn</a><img src="icons8-linkedin-30.png"></div>
+                <div class="contact-info-flex">
+                <div class="contact-info-b"><a href="https://github.com/ayunarang" target="_blank"
+                        class="link"><span>GitHub</span><img src="icons8-github-30.png"></a></div>
+                <div class="contact-info-b"><a href="https://www.linkedin.com/in/ayushinarang21" target="_blank"
+                        class="link"><span>LinkedIn</span><img src="icons8-linkedin-30.png"></a></div>
+            </div>
             </div>
         </div>
 
@@ -326,50 +37,85 @@
                 <div class="content-section">
                     <div class="section-title">CAREER OBJECTIVE</div>
                     <hr class="section">
-                    <p class="size">Aspiring full stack developer dedicated to creating seamless, user-centric web applications for enhanced user experiences.</p>
+                    <p class="size">Aspiring full stack developer dedicated to creating seamless, user-centric web
+                        applications.</p>
                 </div>
 
                 <div class="content-section">
-                    <div class="section-title">PROJECTS</div>
+                    <div class="section-title">EDUCATION</div>
                     <hr class="section">
-                    
-                        <div class="link"><b>Real time Weather Application:</b></div>
-                        <div class="size">Developed a dynamic live weather app using APIs, Implemented responsive design.<br><br></div>
-                        <div class="link" ><b>Amazon Price Tracker:</b></div>
-                        <div class="size">Created a personalized Amazon price tracker that allows users to set affordability thresholds for desired items. Engineered email notification system to alert for specified price range drop.</div>
-                    
+
+                    <p class="link"><b>Degree: </b></p>
+                    <div class="size">Bachelor of Technology in Computer Science (BTech)<br>JMIT | Radaur<br>
+                        [2021-2025]</div>
+                    <p class="link"><b>School: </b></p>
+                    <div class="size">Sacred Heart Convent Sr. Sec. School<br>SHCS | Jagadhri<br>[2018-2020]</div>
+
                 </div>
 
-                
+
+
             </div>
 
             <div class="column">
                 <div class="content-section">
-                    <div class="section-title">EDUCATION</div>
-                    <hr class="section-b">
-                    
-                        <p class="color-sky"><b>Degree: </b></p><div class="size">Bachelor of Technology in Computer Science (BTech)
-                         JMIT | Radaur<br>
-                        [2021-2025]</div>
-                        <p class="color-sky"><b>School: </b></p><div class="size">Sacred Heart Convent Sr. Sec. School | Jagadhri<br>[2018-2020]</div>
-                    
+                    <div class="section-title">SKILLS</div>
+                    <hr class="section">
+
+                    <div class="skill-set">
+                        <div class="link"><b>Programming Languages:</b></div>
+                        <div class="size">Java, HTML5, CSS3, JavaScript, Python</div>
+                    </div>
+
+                    <div class="skill-set">
+                        <div class="link"><b>Frameworks:</b></div>
+                        <div class="size">Django, BootStrap</div>
+                    </div>
+                    <div class="skill-set">
+                        <div class="link"><b>Database:</b></div>
+                        <div class="size">MongoDB</div>
+                    </div>
+                    <div class="skill-set">
+                        <div class="link"><b>General:</b></div>
+                        <div class="size">Data Structures and Algorithm, OOPs with C++</div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="content-section">
+                    <div class="section-title">COURSES</div>
+                    <hr class="section">
+
+                    <div class="link"><b>BetaLabs</b></div>
+                    <div class="size">Learned web development, mastered dynamic and responsive websites.<br></div>
+                    <div class="link"><b>CodeHelp</b></div>
+                    <div class="size">Learned Data Structures and Algorithms. Gained expertise in problem solving
+                        skills, optimizing code and analyzing computational complexities.<br></div>
+
                 </div>
             </div>
 
         </div>
+
         <div class="content-section">
-            <div class="section-title">SKILLS</div>
-            <hr class="section-c">
-            
-                <div class="color-set"><b>Programming Languages:</b></div> <div class="inlines-setting">Java, JavaScript, HTML, CSS, Python<br></div>
-                    <div class="color-set"><b>Frameworks:</b></div> <div class="inlines-setting">Django, BootStrap<br></div>
-                        <div class="color-set"><b>Database:</b></div> <div class="inlines-setting">MongoDB<br></div>
-                            <div class="color-set"><b>General:</b></div> <div class="inlines-setting">Data Structures and Algorithm, OOPs with C++</div>
-            
+            <div class="section-title">PROJECTS</div>
+            <hr class="section">
+
+            <div class="link"><b>Real time Weather Application:</b></div>
+            <div class="size">Developed a dynamic live weather app using <b>APIs</b>. Implemented responsive design,
+                delivering accurate forecasts like wind flow, sunrise, sunset, humidity, and pressure.</div>
+            <div class="link"><b>Amazon Price Tracker:</b></div>
+            <div class="size">Created a personalized Amazon price tracker that allows users to set <b>affordability
+                    thresholds</b> for desired items. Engineered email notification system to alert for specified price
+                range drop.</div>
+
         </div>
         <div class="footer">&copy 2023 Ayushi Narang</div>
     </div>
-    
+
 </body>
 
 </html>
