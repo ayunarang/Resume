@@ -1,0 +1,355 @@
+body {
+    background-color: #F0F8FF;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 50px;
+    line-height: 1.5;
+    margin: 0;
+    /* Set a consistent line height for the entire document */
+
+}
+
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 40px 25px 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+    font-size: 32px;
+    color: #000000;
+    font-weight: bold;
+
+    margin-bottom: 6px;
+
+
+}
+
+.section-title {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.contact-info h3 {
+    color: #59aecf;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #87CEEB;
+    text-decoration: none;
+
+    /* Added space between GitHub and LinkedIn */
+}
+
+.content-section {
+    margin-top: 20px;
+
+
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 40%;
+}
+
+.column:last-child {
+    width: 53%;
+}
+
+ul {
+    margin-top: 0;
+}
+
+ul li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.color-sky {
+    color: #59aecf;
+}
+
+.description {
+    color: #59aecf;
+    font-size: 21px;
+    margin-bottom: 25px;
+
+}
+
+.link {
+    color: #59aecf;
+
+}
+
+.section {
+    width: 100%;
+
+    border: none;
+    height: 4px;
+    /* Set the hr color */
+    color: black;
+    /* old IE */
+    background-color: black;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.skill-set .link {
+    color: #59aecf;
+    display: inline;
+
+}
+
+.skill-set .size {
+    display: inline;
+    margin-bottom: 0;
+}
+
+.contact-email img {
+    width: 21px;
+    height: 21px;
+    margin-left: 3px;
+
+    vertical-align: bottom;
+
+}
+.contact-info-flex{
+    display: flex;
+}
+
+.contact-info-b {
+    display:inline;
+    margin-right: 32px;
+}
+.contact-info-b a{
+    display: flex;
+   margin-right: 7px;
+}
+
+.footer {
+    font-size: 10px;
+    padding: 110px 50px 0px 50px;
+    text-align: center;
+}
+
+.size {
+    margin-bottom: 12px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 630px) {
+    .columns {
+        display: block;
+
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+
+    }
+
+    .resume-container {
+        max-width: 100vh;
+        padding: 50px 18px 15px 18px;
+        margin: 0;
+
+    }
+
+    .size {
+        margin-bottom: 11px;
+        font-size: 11px;
+    }
+
+    .skill-set .size {
+        margin-bottom: 0;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .column:last-child {
+        width: 100%;
+    }
+
+    .contact-email img {
+        width: 14px;
+        height: 14px;
+        margin-left: 1px;
+
+    }
+
+
+
+    .name {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: 19px;
+        
+    }
+
+    .section-title {
+        font-size: 14px;
+    }
+
+    .contact-info h3 {
+        font-size: 10px;
+    }
+
+    .contact-info p,
+    .link,
+    ul li {
+        font-size: 11px;
+    }
+
+    .section {
+        width: 24vh;
+        margin-bottom: 10px;
+        height:4px;
+    }
+   
+    .content-section{
+        margin-top: 23px;
+    }
+
+
+    .contact-info-b {
+        margin-right: 8px;
+    }
+
+    .contact-info {
+        margin-bottom: 38px;
+    }
+    .footer {
+        padding-top: 70px;
+        font-size: 7px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .columns {
+        display: block;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+
+
+    }
+    span{
+        display: none;
+    }
+
+    .resume-container {
+        max-width: 100vh;
+        padding: 50px 20px 19px 20px;
+        margin: 0;
+
+    }
+
+    .contact-email img {
+        width: 12px;
+        height: 12px;
+        margin-left: 2px;
+
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .column:last-child {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .size {
+        margin-bottom: 5px;
+        font-size: 9px;
+    }
+
+    .skill-set .size{
+        display: block;
+    }
+
+    .description {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .section-title {
+        font-size: 12px;
+        font-weight: bold;
+        
+    }
+    .content-section{
+        margin-top: 18px;
+    }
+
+    .contact-info h3 {
+        font-size: 9px;
+    }
+
+    .contact-email p{
+        font-size: 9px;
+    }
+
+    .section {
+        width: 18vh;
+        margin-bottom: 5px;
+        height:2px;
+
+
+    }
+
+    .contact-email a {
+
+        font-size: 8px;
+    }
+
+    .footer {
+        padding-top: 60px;
+        font-size: 6px;
+    }
+
+    .contact-info-b {
+        margin-right: 4px;
+    }
+
+    .contact-info {
+        margin-bottom: 38px;
+    }
+
+}
