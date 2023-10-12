@@ -134,17 +134,19 @@ ul li {
     vertical-align: bottom;
 
 }
-.contact-info-flex{
+
+.contact-info-flex {
     display: flex;
 }
 
 .contact-info-b {
-    display:inline;
+    display: inline;
     margin-right: 32px;
 }
-.contact-info-b a{
+
+.contact-info-b a {
     display: flex;
-   margin-right: 7px;
+    margin-right: 7px;
 }
 
 .footer {
@@ -212,7 +214,7 @@ ul li {
         font-size: 14px;
         margin-top: 0px;
         margin-bottom: 19px;
-        
+
     }
 
     .section-title {
@@ -232,10 +234,10 @@ ul li {
     .section {
         width: 24vh;
         margin-bottom: 10px;
-        height:4px;
+        height: 4px;
     }
-   
-    .content-section{
+
+    .content-section {
         margin-top: 23px;
     }
 
@@ -247,6 +249,7 @@ ul li {
     .contact-info {
         margin-bottom: 38px;
     }
+
     .footer {
         padding-top: 70px;
         font-size: 7px;
@@ -265,7 +268,8 @@ ul li {
 
 
     }
-    span{
+
+    span {
         display: none;
     }
 
@@ -300,7 +304,7 @@ ul li {
         font-size: 9px;
     }
 
-    .skill-set .size{
+    .skill-set .size {
         display: block;
     }
 
@@ -312,9 +316,10 @@ ul li {
     .section-title {
         font-size: 12px;
         font-weight: bold;
-        
+
     }
-    .content-section{
+
+    .content-section {
         margin-top: 18px;
     }
 
@@ -322,14 +327,14 @@ ul li {
         font-size: 9px;
     }
 
-    .contact-email p{
+    .contact-email p {
         font-size: 9px;
     }
 
     .section {
         width: 18vh;
         margin-bottom: 5px;
-        height:2px;
+        height: 2px;
 
 
     }
